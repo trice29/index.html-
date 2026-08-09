@@ -7,6 +7,26 @@
 <body> 
 <header> 
 <h1>Contact Us</h1> 
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Send Me a Message</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required
+                   aria-describedby="email-error">
+            <p id="email-error" class="error-message">
+                Please enter a valid email address.
+            </p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required
+                      aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error-message">
+                Please enter a message.
+            </p>
+            <button type="submit">Send Message</button>
+        </fieldset>
+    </form>
 <nav> 
 <a href="index.html">Home</a> 
  <a href="About.html">Projects</a> 
